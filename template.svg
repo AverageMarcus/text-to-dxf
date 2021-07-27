@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg style="width: 100%; margin: 0 auto;background: #ffffff;" preserveAspectRatio="xMinYMid meet">
+{{range $i, $val := .}}
+  <text font-family="{{ font }}" fill="#000000" font-size="35" y="{{offset $i}}">{{ $val }}</text>
+{{end}}
+</svg>
