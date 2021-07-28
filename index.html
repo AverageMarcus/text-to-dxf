@@ -97,8 +97,9 @@
 
   <script>
     document.getElementById('font').addEventListener('change', function() {
-      document.getElementById('font').style.fontFamily = document.getElementById('font').value;
-      document.getElementById('text').style.fontFamily = document.getElementById('font').value;
+      let selectedFont = `'${document.getElementById('font').value}'`;
+      document.getElementById('font').style.fontFamily = selectedFont;
+      document.getElementById('text').style.fontFamily = selectedFont;
     });
   </script>
 </body>
